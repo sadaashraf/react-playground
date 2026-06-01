@@ -1,13 +1,17 @@
-import EmployeeCard from "./component/card"
+import Event from "./component/even"
+import EmployeeCard from "./component/prop"
+import User from "./component/state"
 
 function App() {
 
   return (
     <div>
+      <User />
+      <Event />
       <h1>Employee List</h1>
-      <EmployeeCard name="John Doe" position="Software Engineer" salary={80000} />
-      <EmployeeCard name="Jane Smith" position="Product Manager" salary={90000} />
-      <EmployeeCard name="Alice Johnson" position="UX Designer" salary={75000} />
+      <EmployeeCard name="John Doe"
+        position="Software Engineer"
+        salary={80000} />
     </div>
   )
 }
