@@ -1,13 +1,12 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 function User() {
   const [name, setName] = useState("Dinayal")
-  const [age, setAge] = useState(0)
+  const [count, setCount] = useState(0)
   return (
     <div>
       <h1>Name : {name}</h1>
-      <p>Age: {age}</p>
-      <button onClick={() => setAge(age + 1)}>Birday</button>
+      <button onClick={() => setCount(count + 1)}>Count: {count}</button>
     </div>
   )
 }

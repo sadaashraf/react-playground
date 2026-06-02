@@ -1,11 +1,13 @@
 import Event from "./component/even"
 import EmployeeCard from "./component/prop"
 import User from "./component/state"
+import Users from "./component/useEffect"
 
 function App() {
 
   return (
     <div>
+      <Users />
       <User />
       <Event />
       <h1>Employee List</h1>
