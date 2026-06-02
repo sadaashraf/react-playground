@@ -1,4 +1,5 @@
 import Event from "./component/even"
+import Form from "./component/form"
 import EmployeeCard from "./component/prop"
 import User from "./component/state"
 import Users from "./component/useEffect"
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <div>
+      <Form />
       <Users />
       <User />
       <Event />
