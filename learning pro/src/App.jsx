@@ -1,24 +1,24 @@
-import Event from "./component/even"
-import Form from "./component/form"
-import EmployeeCard from "./component/prop"
-import User from "./component/state"
-import Users from "./component/useEffect"
+// import Event from "./component/even"
+// import Form from "./component/form"
+// import EmployeeCard from "./component/prop"
+// import User from "./component/state"
+// import Users from "./component/useEffect"
 import axios from "axios"
 import { useState, useEffect } from "react"
 function App() {
   const [jokes, setJokes] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:4000/jokes')
+    axios.get('/api/jokes')
       .then(response => {
         setJokes(response.data);
       })
       .catch(error => {
         console.error('Error fetching jokes:', error);
       });
-  }, []);
+  },);
   return (
     <div>
-      <p>{jokes.length} jokes</p>
+      <p>jokes:{jokes.length}</p>
       {jokes.map(joke => (
         <div key={joke.id}>
           <h3>{joke.title}</h3>
