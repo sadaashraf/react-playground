@@ -5,6 +5,11 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => {
+  res.send('This is backend server');
+});
+
+
+app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
@@ -31,4 +36,4 @@ app.get('/api/jokes', (req, res) => {
 
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`);
-});
+}); 
