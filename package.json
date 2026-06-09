@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sadaashraf/react-playground#readme",
+  "bugs": {
+    "url": "https://github.com/sadaashraf/react-playground/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadaashraf/react-playground.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
